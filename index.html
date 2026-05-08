@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <title>
+            LENGUAJES PERSONIFICADOS
+        </title>
+        <style>
+*{
+    padding:0px;
+    margin:0px;
+}
+.contenedor{
+    width: 600px;
+    height:300px;
+    border:1px solid black;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.tarjeta1, .tarjeta2, .tarjeta3{
+    width:200px;
+    height:300px;
+    position: absolute;
+    top: -300px; 
+    background-size: cover;
+
+}
+.tarjeta1{
+    background-image: url(img/html5.jpg);
+    left:0px;
+    animation: tarjeta1 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+}
+.tarjeta2{
+    background-image: url(img/css.jpg);
+    left:200px;
+    animation: tarjeta2 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+.tarjeta3{
+    background-image: url(img/JS.jpg);
+    left: 400px;
+    animation: tarjeta3 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes tarjeta1 {  
+    0% {  
+        top: -300px;  
+        opacity: 0;  
+        transform: rotateY(180deg) scale(0.3) skewX(10deg);  
+        filter: blur(10px);  
+    }  
+    40% {  
+        top: 120px;  
+        transform: rotateY(720deg) scale(1.1) skewX(-5deg);  
+        filter: blur(0px);  
+    }  
+    70% {  
+        top: -30px;  
+        transform: rotateY(900deg) scale(0.95);  
+    }  
+    100% {  
+        top: 0px;  
+        opacity: 1;  
+        transform: rotateY(1080deg) scale(1) skewX(0deg);  
+        filter: blur(0px);  
+    }  
+}  
+
+@keyframes tarjeta2 {  
+    0% {  
+        top: -300px;  
+        opacity: 0;  
+        transform: rotateY(-180deg) scale(0.3) skewX(-10deg);  
+        filter: blur(10px);  
+    }  
+    40% {  
+        top: 120px;  
+        transform: rotateY(-720deg) scale(1.1) skewX(5deg);  
+        filter: blur(0px);  
+    }  
+    70% {  
+        top: -30px;  
+        transform: rotateY(-900deg) scale(0.95);  
+    }  
+    100% {  
+        top: 0px;  
+        opacity: 1;  
+        transform: rotateY(-1080deg) scale(1) skewX(0deg);  
+        filter: blur(0px);  
+    }  
+}  
+
+@keyframes tarjeta3 {  
+    0% {  
+        top: -300px;  
+        opacity: 0;  
+        transform: rotateY(180deg) scale(0.3) translateX(100px);  
+        filter: blur(10px);  
+    }  
+    35% {  
+        top: 150px;  
+        transform: rotateY(540deg) scale(1.15) translateX(-20px);  
+        filter: blur(0px);  
+    }  
+    65% {  
+        top: -20px;  
+        transform: rotateY(810deg) scale(0.97);  
+    }  
+    100% {  
+        top: 0px;  
+        opacity: 1;  
+        transform: rotateY(1080deg) scale(1) translateX(0px);  
+        filter: blur(0px);  
+    }  
+}  
+
+.tarjeta1:hover{
+    transition: 1s;
+    scale: 1.2;
+    z-index: 1;
+}
+.tarjeta2:hover{
+    transition: 1s;
+    scale: 1.2;
+    z-index: 1;
+
+}
+.tarjeta3:hover{
+    transition: 1s;
+    scale: 1.2;
+    z-index: 1;
+
+}
+</style>
+</head>
+<body>
+<div class="contenedor">
+    <div class="tarjeta1"></div>
+    <div class="tarjeta2"></div>
+    <div class="tarjeta3"></div>
+</div>    
+</body>
+</html>
+        </style>
+    </head>
+</html>
